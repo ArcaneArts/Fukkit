@@ -26,7 +26,7 @@ import org.bukkit.Location;
 @Extension
 public abstract class XLocation implements Vec {
     public static Vec vec(@This Location self) {
-        return Vec.of(self.x, self.y, self.z);
+        return Vec.of(self.getX(), self.getY(), self.getZ());
     }
 
     public static double x(@This Location l) {

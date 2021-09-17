@@ -26,7 +26,7 @@ import org.bukkit.util.Vector;
 @Extension
 public abstract class XVector implements Vec {
     public static Vec vec(@This Vector self) {
-        return Vec.of(self.x, self.y, self.z);
+        return Vec.of(self.getX(), self.getY(), self.getZ());
     }
 
     public static double x(@This Vector l) {
