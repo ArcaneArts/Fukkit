@@ -47,10 +47,10 @@ public class XBlockData {
   }
 
   public static boolean isFluid(@This BlockData self) {
-    return self.isWater() || self.isLava();
+    return self.getMaterial().equals(Material.WATER) || self.getMaterial().equals(Material.LAVA);
   }
 
   public static boolean isWaterLogged(@This BlockData self) {
-    return self instanceof Waterlogged f && f.isWaterlogged();
+    return self instanceof Waterlogged && ((Waterlogged)self).isWaterlogged();
   }
 }
