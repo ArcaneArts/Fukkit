@@ -17,9 +17,3 @@
  */
 
 rootProject.name = 'ChumBukkit'
-
-sourceControl {
-    gitRepository("https://github.com/ArcaneArts/Amulet.git") {
-        producesModule("art.arcane:Amulet")
-    }
-}

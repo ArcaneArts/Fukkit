@@ -23,7 +23,7 @@ plugins {
 }
 
 group 'com.volmit'
-version '1.0.4'
+version '1.0.5'
 
 configurations {
     testImplementation.extendsFrom annotationProcessor
@@ -48,7 +48,7 @@ repositories {
 
 dependencies {
     implementation 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation 'art.arcane:Amulet:1.0.12'
+    implementation 'com.github.ArcaneArts:Amulet:1.0.14'
     implementation 'systems.manifold:manifold-ext-rt:2021.1.16'
     annotationProcessor 'systems.manifold:manifold-ext:2021.1.16'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
