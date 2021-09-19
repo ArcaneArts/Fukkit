@@ -10,6 +10,13 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
       - name: Generate release tag
-        uses: amitsingh-007/next-release-tag@v1.0.0
+        uses: cyberpwnn/next-release-tag@v1.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ env.next_release_version  }}"
+          prerelease: false
+          title: "${{ env.next_release_version  }}"
