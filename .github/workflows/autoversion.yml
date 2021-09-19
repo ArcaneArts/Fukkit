@@ -2,7 +2,7 @@ name: "autoversion"
 on:
   push:
     branches:
-      - "master"
+      - "main"
 jobs:
   autoversion:
     runs-on: ubuntu-latest
