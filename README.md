@@ -5,7 +5,7 @@ Amulet &amp; Manifold extensions for Bukkit
 
 ```groovy
 maven { url 'https://jitpack.io' }
-```
+``` 
 
 ```groovy
 implementation 'com.github.VolmitSoftware:VolmitSoftware:latest.release'
