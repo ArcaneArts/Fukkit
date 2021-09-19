@@ -24,7 +24,9 @@ plugins {
 }
 
 group 'com.volmit'
-version '1.0.5'
+version '1.0.6'
+sourceCompatibility = 16
+targetCompatibility = 16
 
 configurations {
     testImplementation.extendsFrom annotationProcessor
