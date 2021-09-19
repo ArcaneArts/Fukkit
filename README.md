@@ -14,4 +14,13 @@ sourceControl {
 }
 ```
 2. Specify the dependency as `implementation 'com.volmit:ChumBukkit:<VERSION>'`
-3. Since we're using manifold here, follow the [Amulet setup instructions](https://github.com/ArcaneArts/Amulet#project-setup)~~~~
+3. Since we're using manifold here, follow the [Amulet setup instructions](https://github.com/ArcaneArts/Amulet#project-setup)
+
+## Problems
+If you are having any issues building, generally the following will fix the problem
+1. :clean
+2. Invalidate Caches Restart
+3. :build
+
+## Updating ChumBukkit
+Due to the use of source dependencies, **ITJ Refresh Project will NOT update ChumBukkit** you need to actually run :build on your project to build the new chumbukkit dependencies. 
