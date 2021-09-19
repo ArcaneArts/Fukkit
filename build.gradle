@@ -19,6 +19,7 @@
 plugins {
     id 'java'
     id 'java-library'
+    id 'maven-publish'
     id "io.freefair.lombok" version "6.1.0"
 }
 
@@ -53,6 +54,14 @@ dependencies {
     annotationProcessor 'systems.manifold:manifold-ext:2021.1.16'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
 
 if (JavaVersion.current() != JavaVersion.VERSION_1_8 &&
