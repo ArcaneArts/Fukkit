@@ -10,7 +10,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
       - name: Generate release tag
-        uses: cyberpwnn/next-release-tag@v1.0.0
+        uses: cyberpwnn/next-release-tag@1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Release Tag
