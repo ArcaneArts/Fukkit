@@ -24,7 +24,7 @@ import manifold.ext.rt.api.This;
 import org.bukkit.util.Vector;
 
 @Extension
-public abstract class XVector implements Vec {
+public abstract class XVector {
     public static Vec vec(@This Vector self) {
         return Vec.of(self.getX(), self.getY(), self.getZ());
     }

@@ -24,7 +24,7 @@ import manifold.ext.rt.api.This;
 import org.bukkit.Location;
 
 @Extension
-public abstract class XLocation implements Vec {
+public abstract class XLocation {
     public static Vec vec(@This Location self) {
         return Vec.of(self.getX(), self.getY(), self.getZ());
     }

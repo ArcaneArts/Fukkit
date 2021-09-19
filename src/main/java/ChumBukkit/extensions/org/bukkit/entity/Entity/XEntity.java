@@ -27,7 +27,7 @@ public class XEntity {
   public static void explode(@This Entity self, float power, boolean breakBlocks) {
     self.getWorld().createExplosion(self.getLocation(), power, false, breakBlocks);
   }
-  
+
   public static void explode(@This Entity self) {
     self.explode(3f, false);
   }
