@@ -24,7 +24,7 @@ plugins {
 }
 
 group 'com.volmit'
-version '1.0.7' 
+version 'latest'
 sourceCompatibility = 16
 targetCompatibility = 16
 
@@ -51,7 +51,7 @@ repositories {
 
 dependencies {
     implementation 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation 'com.github.ArcaneArts:Amulet:1.0.14'
+    implementation 'com.github.ArcaneArts:Amulet:20.9.1'
     implementation 'systems.manifold:manifold-ext-rt:2021.1.16'
     annotationProcessor 'systems.manifold:manifold-ext:2021.1.16'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
