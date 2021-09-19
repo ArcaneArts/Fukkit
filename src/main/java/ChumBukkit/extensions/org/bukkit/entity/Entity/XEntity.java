@@ -16,19 +16,18 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.chum;
+package ChumBukkit.extensions.org.bukkit.entity.Entity;
 
-import com.volmit.chum.dirty.EventTrap;
-import org.bukkit.entity.Player;
-import org.bukkit.event.HandlerList;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerKickEvent;
-import org.bukkit.plugin.java.JavaPlugin;
+import manifold.ext.rt.api.Extension;
+import manifold.ext.rt.api.This;
+import org.bukkit.entity.Entity;
 
-public class ChumBukkit
-{
-    public void on()
-    {
-        EventTrap.once(PlayerKickEvent.class, (f) -> f.setCancelled(true));
-    }
+@Extension
+public class XEntity {
+  public static void explode(@This Entity self, float power, boolean breakBlocks) {
+    self.getWorld().createExplosion(self.getLocation(), power, false, breakBlocks);
+  }
+  public static void explode(@This Entity self) {
+    self.explode(3f, false);
+  }
 }
