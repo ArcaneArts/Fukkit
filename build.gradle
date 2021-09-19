@@ -51,7 +51,7 @@ repositories {
 
 dependencies {
     implementation 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation 'com.github.ArcaneArts:Amulet:20.9.1'
+    implementation 'com.github.ArcaneArts:Amulet:21.9.3'
     implementation 'systems.manifold:manifold-ext-rt:2021.1.16'
     annotationProcessor 'systems.manifold:manifold-ext:2021.1.16'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
