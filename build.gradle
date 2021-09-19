@@ -36,12 +36,6 @@ jar {
     }
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
-}
-
-
 repositories {
     maven {
         url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
