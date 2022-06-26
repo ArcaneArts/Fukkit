@@ -21,6 +21,7 @@ package Fukkit.extensions.org.bukkit.block.data.BlockData;
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.block.data.Waterlogged;
 
