@@ -30,6 +30,12 @@ configurations {
     testImplementation.extendsFrom annotationProcessor
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 jar {
     manifest {
         attributes('Contains-Sources':'java,class')
@@ -48,12 +54,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation 'com.github.ArcaneArts:Amulet:21.9.3'
-    implementation 'systems.manifold:manifold-ext-rt:2021.1.16'
-    annotationProcessor 'systems.manifold:manifold-ext:2021.1.16'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.spigotmc:spigot-api:1.19.1-R0.1-SNAPSHOT'
+    implementation 'com.github.ArcaneArts:Amulet:22.6.5'
+    annotationProcessor 'systems.manifold:manifold-ext:2022.1.18'
+    implementation 'systems.manifold:manifold-rt:2022.1.18'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 publishing {
@@ -63,6 +69,27 @@ publishing {
         }
     }
 }
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            name = "cloudsmith"
+            version = System.getenv("CLOUDSMITH_VERSION")
+            url = "https://maven.cloudsmith.io/arcane/archive/"
+            url = "https://maven.cloudsmith.io/arcane/archive/"
+            credentials {
+                username = System.getenv("CLOUDSMITH_USERNAME")
+                password = System.getenv("CLOUDSMITH_PASSWORD")
+            }
+        }
+    }
+}
+
 
 if (JavaVersion.current() != JavaVersion.VERSION_1_8 &&
         sourceSets.main.allJava.files.any {it.name == "module-info.java"}) {

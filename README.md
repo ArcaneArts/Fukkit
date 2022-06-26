@@ -1,4 +1,4 @@
-# Fukkit
+# ChumBukkit
 Amulet &amp; Manifold extensions for Bukkit
 
 # Add to Project
