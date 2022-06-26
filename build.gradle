@@ -54,7 +54,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.spigotmc:spigot-api:1.19.1-R0.1-SNAPSHOT'
+    implementation 'org.spigotmc:spigot-api:1.19-R0.1-SNAPSHOT'
     implementation 'com.github.ArcaneArts:Amulet:22.6.5'
     annotationProcessor 'systems.manifold:manifold-ext:2022.1.18'
     implementation 'systems.manifold:manifold-rt:2022.1.18'
