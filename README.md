@@ -1,26 +1,16 @@
 # Fukkit
 Amulet &amp; Manifold extensions for Bukkit
 
-# Add to Project
+[![Latest version of 'Amulet' @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/arcane/archive/maven/Fukkit/latest/a=noarch;xg=com.volmit/?render=true&show_latest=true)](https://cloudsmith.io/~arcane/repos/archive/packages/detail/maven/Fukkit/latest/a=noarch;xg=com.volmit/)
 
-Due to the abandoned nature of Jitpack, they still only support jdk11, so we need to add ChumBukkit as a source dependency in gradle (for now). Hopefully in the future this wont be so bad.
-
-1. In settings.gradle, add the following
-```gradle
-sourceControl {
-    gitRepository("https://github.com/VolmitSoftware/ChumBukkit.git") {
-        producesModule("com.volmit:ChumBukkit")
-    }
-}
+```groovy
+maven { url "https://dl.cloudsmith.io/public/arcane/archive/maven/" }
 ```
-2. Specify the dependency as `implementation 'com.volmit:ChumBukkit:<VERSION>'`
-3. Since we're using manifold here, follow the [Amulet setup instructions](https://github.com/ArcaneArts/Amulet#project-setup)
 
-## Problems
-If you are having any issues building, generally the following will fix the problem
-1. :clean
-2. Invalidate Caches Restart
-3. :build
+```groovy
+implementation 'com.volmit:Fukkit:<VERSION>'
+```
 
-## Updating Fukkit
-Due to the use of source dependencies, **ITJ Refresh Project will NOT update Fukkit** you need to actually run :build on your project to build the new chumbukkit dependencies. 
+# Setup
+
+Since we're using manifold here, follow the [Amulet setup instructions](https://github.com/ArcaneArts/Amulet#project-setup)
