@@ -1,4 +1,4 @@
-# ChumBukkit
+# Fukkit
 Amulet &amp; Manifold extensions for Bukkit
 
 # Add to Project
@@ -22,5 +22,5 @@ If you are having any issues building, generally the following will fix the prob
 2. Invalidate Caches Restart
 3. :build
 
-## Updating ChumBukkit
-Due to the use of source dependencies, **ITJ Refresh Project will NOT update ChumBukkit** you need to actually run :build on your project to build the new chumbukkit dependencies. 
+## Updating Fukkit
+Due to the use of source dependencies, **ITJ Refresh Project will NOT update Fukkit** you need to actually run :build on your project to build the new chumbukkit dependencies. 
