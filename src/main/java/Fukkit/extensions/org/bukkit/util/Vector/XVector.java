@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package ChumBukkit.extensions.org.bukkit.util.Vector;
+package Fukkit.extensions.org.bukkit.util.Vector;
 
 import art.arcane.amulet.geometry.Vec;
 import manifold.ext.rt.api.Extension;

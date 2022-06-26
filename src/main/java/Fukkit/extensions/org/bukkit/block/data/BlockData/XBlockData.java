@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package ChumBukkit.extensions.org.bukkit.block.data.BlockData;
+package Fukkit.extensions.org.bukkit.block.data.BlockData;
 
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;

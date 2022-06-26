@@ -16,9 +16,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package ChumBukkit.extensions.org.bukkit.entity.LivingEntity;
+package Fukkit.extensions.org.bukkit.entity.LivingEntity;
 
-import com.volmit.chum.builders.PotionApplier;
+import com.volmit.fukkit.builders.PotionApplier;
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
 import org.bukkit.entity.LivingEntity;

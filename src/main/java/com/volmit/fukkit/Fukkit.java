@@ -16,9 +16,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.chum;
+package com.volmit.fukkit;
 
-import com.volmit.chum.dirty.EventTrap;
+import com.volmit.fukkit.dirty.EventTrap;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;

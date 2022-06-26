@@ -16,9 +16,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.chum.builders;
+package com.volmit.fukkit.builders;
 
-import com.volmit.chum.dirty.EventTrap;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Getter;

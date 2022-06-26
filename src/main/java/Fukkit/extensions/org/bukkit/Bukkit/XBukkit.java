@@ -1,4 +1,4 @@
-package ChumBukkit.extensions.org.bukkit.Bukkit;
+package Fukkit.extensions.org.bukkit.Bukkit;
 
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;

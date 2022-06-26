@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package ChumBukkit.extensions.org.bukkit.plugin.Plugin;
+package Fukkit.extensions.org.bukkit.plugin.Plugin;
 
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
