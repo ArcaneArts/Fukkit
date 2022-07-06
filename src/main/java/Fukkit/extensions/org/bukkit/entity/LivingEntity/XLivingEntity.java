@@ -18,11 +18,10 @@
 
 package Fukkit.extensions.org.bukkit.entity.LivingEntity;
 
-import com.volmit.fukkit.builders.PotionApplier;
+import art.arcane.fukkit.builders.PotionApplier;
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
 import org.bukkit.block.Block;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.potion.PotionEffectType;
 

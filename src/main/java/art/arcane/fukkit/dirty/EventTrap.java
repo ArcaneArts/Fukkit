@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.fukkit.dirty;
+package art.arcane.fukkit.dirty;
 
 import art.arcane.amulet.functional.Consume;
 import org.bukkit.Bukkit;

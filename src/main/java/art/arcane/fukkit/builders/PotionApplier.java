@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.fukkit.builders;
+package art.arcane.fukkit.builders;
 
 import lombok.AccessLevel;
 import lombok.Data;
@@ -24,7 +24,6 @@ import lombok.Getter;
 import lombok.experimental.Accessors;
 import manifold.ext.rt.api.Self;
 import org.bukkit.entity.LivingEntity;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 

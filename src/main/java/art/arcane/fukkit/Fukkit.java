@@ -16,14 +16,10 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.volmit.fukkit;
+package art.arcane.fukkit;
 
-import com.volmit.fukkit.dirty.EventTrap;
-import org.bukkit.entity.Player;
-import org.bukkit.event.HandlerList;
-import org.bukkit.event.Listener;
+import art.arcane.fukkit.dirty.EventTrap;
 import org.bukkit.event.player.PlayerKickEvent;
-import org.bukkit.plugin.java.JavaPlugin;
 
 public class Fukkit
 {
