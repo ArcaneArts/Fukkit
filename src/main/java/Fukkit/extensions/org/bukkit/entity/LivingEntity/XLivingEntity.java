@@ -21,11 +21,21 @@ package Fukkit.extensions.org.bukkit.entity.LivingEntity;
 import com.volmit.fukkit.builders.PotionApplier;
 import manifold.ext.rt.api.Extension;
 import manifold.ext.rt.api.This;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.potion.PotionEffectType;
 
 @Extension
 public class XLivingEntity {
+  public static Block targetBlock(@This LivingEntity self) {
+    return self.getTargetBlockExact(256);
+  }
+
+  public static Block targetBlock(@This LivingEntity self, int max) {
+    return self.getTargetBlockExact(max);
+  }
+
   public static PotionApplier potion(@This LivingEntity self) {
     return new PotionApplier(self);
   }
