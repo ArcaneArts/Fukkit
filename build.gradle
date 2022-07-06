@@ -23,7 +23,7 @@ plugins {
     id "io.freefair.lombok" version "6.1.0"
 }
 
-group 'com.volmit'
+group 'art.arcane'
 version 'latest'
 
 configurations {
